@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for contact list",
+  "main": "app.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "save-dev": "^2.0.0",
+    "sequelize": "^5.8.10"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "author": "kjalen",
+  "license": "ISC"
+}

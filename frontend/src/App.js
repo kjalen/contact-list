@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Report from './report.js'
 import Modal from './modal/modal';
+import AddContact from './AddContact.js'
 
 import './App.css';
 
@@ -29,11 +30,9 @@ render() {
         <Modal
           show={this.state.showModal}
           closeCallback={this.toggleModal}
-          customClass="custom_modal_class"
-        >
+          customClass="custom_modal_class">
           <React.Fragment>
-            <h2>Add/Edit Contact</h2>
-            <div> testing modal</div>
+            <AddContact />
           </React.Fragment>
         </Modal>
       </div>

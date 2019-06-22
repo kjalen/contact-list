@@ -59,7 +59,7 @@ class Names {
             include: [
                 { model: Number}
             ]
-        }).then(data => res.status(200).send(data));
+        }).then(data => {res.json({'status': 'success', 'data': data})});
     }
 }
 

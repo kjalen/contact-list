@@ -45,11 +45,11 @@ class Report extends Component {
                 <TableBody>
                   {this.state.contacts.map(row => (
                     <TableRow key={row.id}>
-                      <TableCell align="right">Edit Button</TableCell>
-                      <TableCell align="right">{row.name}</TableCell>
-                      <TableCell align="right">{row.role}</TableCell>
-                      <TableCell align="right">{row.email}</TableCell>
-                      <TableCell align="right">{row.Numbers[0].number}</TableCell>
+                      <TableCell>Edit Button</TableCell>
+                      <TableCell>{row.name}</TableCell>
+                      <TableCell>{row.role}</TableCell>
+                      <TableCell>{row.email}</TableCell>
+                      <TableCell>{(row.Numbers[0]) ? row.Numbers[0].number : ''}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
